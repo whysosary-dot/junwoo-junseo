@@ -76,7 +76,7 @@ a{color:#3A3532}a:hover{color:#B5634B}
       <div style="position: absolute; left: -10px; bottom: 22px; background: #FFFFFF; padding: 10px 14px 10px 16px; font-family: 'Noto Serif KR', serif; font-size: 13px; letter-spacing: 0.2em; color: #2B2724">준우 <span style="font-family: 'Cormorant Garamond', serif; font-style: italic; letter-spacing: 0.04em; color: #8C8178; font-size: 13px">Junwoo</span></div>
     </div>
     <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 14px; font-size: 11px; letter-spacing: 0.22em; color: #8C8178">
-      <div>첫째 · 형</div><div style="font-family: 'Cormorant Garamond', serif; font-style: italic; letter-spacing: 0.04em; font-size: 13px">the quiet observer</div>
+      <div>첫째 · 형</div><div style="font-family: 'Cormorant Garamond', serif; font-style: italic; letter-spacing: 0.04em; font-size: 13px">the big smile</div>
     </div>
   </div>
   <div style="flex: none; padding: 40px 34px 0 34px">
@@ -87,6 +87,22 @@ a{color:#3A3532}a:hover{color:#B5634B}
     <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 14px; font-size: 11px; letter-spacing: 0.22em; color: #8C8178">
       <div style="font-family: 'Cormorant Garamond', serif; font-style: italic; letter-spacing: 0.04em; font-size: 13px">the big smile</div><div>둘째 · 동생</div>
     </div>
+  </div>
+
+
+  <!-- GALLERY -->
+  <div style="flex: none; padding: 58px 34px 0 34px; text-align: center">
+    <div style="font-family: 'Cormorant Garamond', serif; font-size: 12px; letter-spacing: 0.4em; color: #B5634B; font-weight: 500">GALLERY</div>
+    <div style="font-family: 'Noto Serif KR', serif; font-weight: 400; font-size: 18px; letter-spacing: 0.06em; margin-top: 12px; color: #2B2724">준우 · 준서의 지난 일 년</div>
+    <div style="font-size: 12px; color: #8C8178; margin-top: 8px; letter-spacing: 0.04em">사진을 누르면 크게 볼 수 있어요</div>
+  </div>
+  <div id="gal" style="flex: none; padding: 24px 22px 0 22px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px"><button class="gt" data-i="0" aria-label="사진 1" style="padding:0;border:none;background:#EDE7DF;aspect-ratio:1;overflow:hidden;cursor:pointer;display:block"><img src="gallery/t01.jpg" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></button><button class="gt" data-i="1" aria-label="사진 2" style="padding:0;border:none;background:#EDE7DF;aspect-ratio:1;overflow:hidden;cursor:pointer;display:block"><img src="gallery/t02.jpg" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></button><button class="gt" data-i="2" aria-label="사진 3" style="padding:0;border:none;background:#EDE7DF;aspect-ratio:1;overflow:hidden;cursor:pointer;display:block"><img src="gallery/t03.jpg" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></button><button class="gt" data-i="3" aria-label="사진 4" style="padding:0;border:none;background:#EDE7DF;aspect-ratio:1;overflow:hidden;cursor:pointer;display:block"><img src="gallery/t04.jpg" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></button><button class="gt" data-i="4" aria-label="사진 5" style="padding:0;border:none;background:#EDE7DF;aspect-ratio:1;overflow:hidden;cursor:pointer;display:block"><img src="gallery/t05.jpg" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></button><button class="gt" data-i="5" aria-label="사진 6" style="padding:0;border:none;background:#EDE7DF;aspect-ratio:1;overflow:hidden;cursor:pointer;display:block"><img src="gallery/t06.jpg" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></button><button class="gt" data-i="6" aria-label="사진 7" style="padding:0;border:none;background:#EDE7DF;aspect-ratio:1;overflow:hidden;cursor:pointer;display:block"><img src="gallery/t07.jpg" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></button><button class="gt" data-i="7" aria-label="사진 8" style="padding:0;border:none;background:#EDE7DF;aspect-ratio:1;overflow:hidden;cursor:pointer;display:block"><img src="gallery/t08.jpg" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></button><button class="gt" data-i="8" aria-label="사진 9" style="padding:0;border:none;background:#EDE7DF;aspect-ratio:1;overflow:hidden;cursor:pointer;display:block"><img src="gallery/t09.jpg" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></button></div>
+  <div id="lb" style="display:none; position:fixed; inset:0; z-index:100; background:rgba(20,17,15,.96); flex-direction:column; align-items:center; justify-content:center; touch-action:pan-y">
+    <img id="lbimg" src="" alt="" style="max-width:100vw; max-height:84vh; object-fit:contain; display:block; user-select:none; -webkit-user-drag:none">
+    <div id="lbn" style="position:absolute; bottom:22px; left:0; right:0; text-align:center; color:#D9D1C7; font-family:'Cormorant Garamond',serif; font-size:15px; letter-spacing:.2em"></div>
+    <button id="lbx" aria-label="닫기" style="position:absolute; top:14px; right:14px; width:40px; height:40px; border:none; border-radius:50%; background:rgba(255,255,255,.12); color:#fff; font-size:22px; cursor:pointer">×</button>
+    <button id="lbp" aria-label="이전" style="position:absolute; left:6px; top:50%; transform:translateY(-50%); width:44px; height:64px; border:none; background:none; color:rgba(255,255,255,.75); font-size:34px; cursor:pointer">‹</button>
+    <button id="lbq" aria-label="다음" style="position:absolute; right:6px; top:50%; transform:translateY(-50%); width:44px; height:64px; border:none; background:none; color:rgba(255,255,255,.75); font-size:34px; cursor:pointer">›</button>
   </div>
 
   <!-- DATE -->
@@ -140,6 +156,22 @@ a{color:#3A3532}a:hover{color:#B5634B}
 (function(){var t=new Date(2027,0,10),n=new Date();n.setHours(0,0,0,0);var d=Math.round((t-n)/864e5);var e=document.getElementById('dday');if(e)e.textContent=d>0?d:(d===0?'0':'-'+(-d));})();
 </script>
 
+
+<script>
+(function(){
+  var N=9,i=0,lb=document.getElementById('lb'),im=document.getElementById('lbimg'),n=document.getElementById('lbn');
+  function src(k){return 'gallery/g'+String(k+1).padStart(2,'0')+'.jpg';}
+  function show(k){i=(k+N)%N;im.src=src(i);n.textContent=(i+1)+' / '+N;var pre=new Image();pre.src=src((i+1)%N);}
+  function open(k){show(k);lb.style.display='flex';document.body.style.overflow='hidden';}
+  function close(){lb.style.display='none';document.body.style.overflow='';}
+  document.querySelectorAll('#gal .gt').forEach(function(b){b.addEventListener('click',function(){open(+b.dataset.i);});});
+  document.getElementById('lbx').onclick=close;document.getElementById('lbp').onclick=function(e){e.stopPropagation();show(i-1);};document.getElementById('lbq').onclick=function(e){e.stopPropagation();show(i+1);};
+  lb.addEventListener('click',function(e){if(e.target===lb)close();});
+  document.addEventListener('keydown',function(e){if(lb.style.display==='none')return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')show(i-1);if(e.key==='ArrowRight')show(i+1);});
+  var sx=null;lb.addEventListener('touchstart',function(e){sx=e.touches[0].clientX;},{passive:true});
+  lb.addEventListener('touchend',function(e){if(sx==null)return;var dx=e.changedTouches[0].clientX-sx;sx=null;if(Math.abs(dx)>40)show(dx<0?i+1:i-1);},{passive:true});
+})();
+</script>
 <audio id="bgm" src="music.mp3" loop preload="auto"></audio>
 <button id="bgmbtn" aria-label="배경음악" style="position: fixed; right: 16px; top: 16px; z-index: 50; width: 40px; height: 40px; border-radius: 50%; border: 1px solid rgba(43,39,36,.25); background: rgba(255,255,255,.85); backdrop-filter: blur(6px); color: #2B2724; font-size: 15px; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0">♪</button>
 <style>
